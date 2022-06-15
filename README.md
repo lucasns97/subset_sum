@@ -16,6 +16,8 @@ Find the number of subsets of {1, ..., 2000}, the sum of whose elements is divis
 
 ## Brute Force - Solution
 
+*This is just an example of how to not find the answer for the previous question. Would take forever...*
+
 ```bash
 
 ~.../repo/app$ python main.py
@@ -29,5 +31,3 @@ Find the number of subsets of {1, ..., 2000}, the sum of whose elements is divis
 [DEBUG] Counting divisible subsets: 100%|███████████████████████████| 65535/65535 [00:11<00:00, 5729.81it/s, Divisible subsets=13119]
 >> There are 13119 subsets divisible by 5.
 ```
-
-*This is just an example of how to not find the answer for the previous question. Would take forever...*
