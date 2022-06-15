@@ -87,6 +87,10 @@ class Processor:
         :return: Number of divisible subsets.
         """
 
+        if DEBUG:
+            print(f"[DEBUG] Counting the number of subsets that are divisible by {self.divisor}.")
+            print(f"[DEBUG] The set of numbers is {self.set_of_numbers}.")
+
         # Count the number of divisible subsets
         sum_of = 0
 
