@@ -21,6 +21,7 @@ SET_MIN = min(SET)
 SET_LENGHT = len(SET)
 DIVISOR = 5
 
+
 # TESTS
 def test_main() -> None:
     """

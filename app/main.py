@@ -5,6 +5,7 @@ from typing import Set
 
 # METHODS
 
+
 # MAIN
 def main(set_of_numbers: Set[int] = DEFAULT_SET, divisor: int = DEFAULT_DIVISOR) -> int:
     """
@@ -26,9 +27,10 @@ def main(set_of_numbers: Set[int] = DEFAULT_SET, divisor: int = DEFAULT_DIVISOR)
 
     return subset_count
 
+
 # RUN
 if __name__ == '__main__':
-    
+
     print()
 
     # Retrieve user input
@@ -47,7 +49,7 @@ if __name__ == '__main__':
 
     # Build set
     set_of_numbers = {i for i in range(first_number_of_set, last_number_of_set + 1)}
-    
+
     # Run main
     _ = main(set_of_numbers=set_of_numbers, divisor=divisor)
     print()

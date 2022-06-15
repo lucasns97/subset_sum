@@ -5,12 +5,12 @@ from tqdm import tqdm
 # CONSTANTS
 from src.environment import DEFAULT_DIVISOR, DEFAULT_SET, DEBUG
 
-# CLASS
 
+# CLASS
 class Processor:
 
     def __init__(self, set_of_numbers: Set[int] = DEFAULT_SET, divisor: int = DEFAULT_DIVISOR) -> None:
-        
+
         # Internal variables
         self.update_set_of_numbers(set_of_numbers)
         self.update_divisor(divisor)
@@ -95,15 +95,15 @@ class Processor:
         sum_of = 0
 
         # Iterate over the subsets
-        pbar =  tqdm(
+        pbar = tqdm(
             self.yield_subset(),
             desc="[DEBUG] Counting divisible subsets",
             disable=not DEBUG,
             total=self.get_count_of_all_non_empty_subsets()
         )
-        
+
         for subset in pbar:
-                
+
             # Check if the subset is divisible by the divisor
             if self.is_subset_divisible(subset):
                 sum_of += 1

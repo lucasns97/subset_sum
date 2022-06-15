@@ -21,6 +21,7 @@ SET_MIN = min(SET)
 SET_LENGHT = len(SET)
 DIVISOR = 5
 
+
 # TESTS
 def test_constructor():
     """
@@ -32,7 +33,8 @@ def test_constructor():
 
     # Check the internal variables
     assert processor.set_of_numbers == SET
-    assert processor.divisor == DIVISOR    
+    assert processor.divisor == DIVISOR
+
 
 def test_update_set_of_numbers():
     """
@@ -72,12 +74,12 @@ def test_yield_subset():
     """
     Tests the yield_subset method.
     """
-    
+
     # Initialize the processor
     processor = Processor(set_of_numbers=SET)
 
     # Count subsets
-    counter = [0]*len(SUBSETS_LIST)
+    counter = [0] * len(SUBSETS_LIST)
 
     for subset in processor.yield_subset():
 
@@ -92,7 +94,7 @@ def test_yield_subset():
         counter[index] += 1
 
     # Check the counter
-    assert counter == [1]*len(SUBSETS_LIST)
+    assert counter == [1] * len(SUBSETS_LIST)
 
 
 def test_is_subset_divisible():
