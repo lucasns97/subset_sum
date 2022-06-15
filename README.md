@@ -18,7 +18,7 @@ Find the number of subsets of {1, ..., 2000}, the sum of whose elements is divis
 
 ```bash
 
-$ .../repo/app python main.py
+~/repo/app$ python main.py
 
 >> Enter the lowest number of the set: 0
 >> Enter the highest number of the set: 15
