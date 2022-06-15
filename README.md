@@ -28,4 +28,4 @@ Find the number of subsets of {1, ..., 2000}, the sum of whose elements is divis
 >> There are 13119 subsets divisible by 5.
 ```
 
-*This is just an example of how to not find the answer to the previous question. Would take forever...*
+*This is just an example of how to not find the answer for the previous question. Would take forever...*
